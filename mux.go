@@ -22,7 +22,7 @@ var (
 )
 
 func main() {
-	fmt.print("main func")
+	fmt.Println("main func")
 }
 
 // NewRouter returns a new router instance.
