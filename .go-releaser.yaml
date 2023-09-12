@@ -1,0 +1,8 @@
+builds:
+    id: "my-build"
+    main: ./mux
+    binary: bin/program
+    goos:
+      - linux
+      - darwin
+      - windows
