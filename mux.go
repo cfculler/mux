@@ -21,6 +21,10 @@ var (
 	ErrNotFound = errors.New("no matching route was found")
 )
 
+func main() {
+	fmt.Println("in main func")
+}
+
 // NewRouter returns a new router instance.
 func NewRouter() *Router {
 	return &Router{namedRoutes: make(map[string]*Route)}
@@ -30,12 +34,13 @@ func NewRouter() *Router {
 //
 // It implements the http.Handler interface, so it can be registered to serve
 // requests:
-var router = mux.NewRouter()
-
-func main() {
-	http.Handle("/", router)
-}
-
+//
+//	var router = mux.NewRouter()
+//
+//	func main() {
+//	    http.Handle("/", router)
+//	}
+//
 // Or, for Google App Engine, register it in a init() function:
 //
 //	func init() {
