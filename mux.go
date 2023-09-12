@@ -21,6 +21,10 @@ var (
 	ErrNotFound = errors.New("no matching route was found")
 )
 
+func main() {
+	fmt.print("main func")
+}
+
 // NewRouter returns a new router instance.
 func NewRouter() *Router {
 	return &Router{namedRoutes: make(map[string]*Route)}
