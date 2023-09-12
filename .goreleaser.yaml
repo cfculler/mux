@@ -1,6 +1,6 @@
 builds:
     id: "my-build"
-    main: ./mux
+    main: ./mux.go
     binary: bin/program
     goos:
       - linux
